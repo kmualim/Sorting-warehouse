@@ -38,7 +38,7 @@ public class Shelf {
 	 * @param b
 	 */
 	public void addBox(Box b){
-		//ADD YOUR CODE HERE 
+		
 		Box a = firstBox; 
 		if (a == null) {
 			firstBox = b;
@@ -62,7 +62,7 @@ public class Shelf {
 	 * @return
 	 */
 	public Box removeBox(String identifier){
-		//ADD YOUR CODE HERE
+		
 		Box a = firstBox;   
 		while ( a != null) { 
 			if (a.id == identifier) { 
