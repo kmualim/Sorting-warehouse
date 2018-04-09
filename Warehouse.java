@@ -229,7 +229,7 @@ public class Warehouse{
 	 * reorganize the entire warehouse : start with smaller shelves and first box on each shelf.
 	 */
 	public void reorganize (){
-		//ADD YOUR CODE HERE
+		
 		for (int i=0; i<nbShelves; i++) {
 			
 			Box current = storage[i].firstBox;
