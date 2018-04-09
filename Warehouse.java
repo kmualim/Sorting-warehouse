@@ -65,7 +65,7 @@ public class Warehouse{
 	 * @param end
 	 */
 	protected void mergeSort(int start, int end){
-		//ADD YOUR CODE HERE
+	
 		int mid = (start+end)/2;
 		if (start < end) { 
 			 mergeSort(start, mid); 
@@ -82,7 +82,7 @@ public class Warehouse{
 	 * @param end
 	 */
 	protected void merge(int start, int mid, int end){
-		//ADD YOUR CODE HERE 
+		
 			
 				int n1 = mid - start + 1; 
 				int n2 = end - mid;
@@ -134,8 +134,7 @@ public class Warehouse{
 	 * @return problem or noProblem
 	 */
 	public String addBox (Box b){
-		//ADD YOUR CODE HERE
-		// do we need to adjust the length of the shelf? 
+ 
 		
 		for (int i=0; i< storage.length; i++) {
 			if (storage[i].height >= b.height) { 
@@ -154,7 +153,7 @@ public class Warehouse{
 	 * @return problem or noProblem
 	 */
 	public String addToShip (Box b){
-		//ADD YOUR CODE HERE 
+		
 		
 		if(b != null) {
 			if (b.getClass() == UrgentBox.class) { 
@@ -197,7 +196,7 @@ public class Warehouse{
 	 * @return problem or noProblem
 	 */
 	public String shipBox (String identifier){
-		//ADD YOUR CODE HERE
+		
 		for (int i=0; i< nbShelves; i++) { 
 			 Box del = storage[i].removeBox(identifier);
 			 if (del != null) {
@@ -216,7 +215,7 @@ public class Warehouse{
 	 * @param position
 	 */
 	public void moveOneBox (Box b, int position){
-		//ADD YOUR CODE HERE 
+		
 		for (int i=0; i<nbShelves; i++) {
 			if (i != position) {
 				storage[position].removeBox(b.id);
